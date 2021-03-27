@@ -1,0 +1,128 @@
+@import url(css/font.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--Abel);
+}
+/* variable font */
+:root{
+  --Abel: 'Abel', cursive;
+  --Anton: 'Anton', cursive;
+  --Josefin: 'Josefin', cursive;
+  --Livvic: 'Livvic', cursive;
+
+/* navbar */
+  --hijau: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: var(--hijau);
+  min-width: 160px;
+  box-shadow: 0px 2px 14px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*----jumbotron---*/
+.carousel-caption {
+  width: 100%;
+  height: 100vh;
+  background: rgba(86, 86, 86, 0.3);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  left: 0;
+  top: 650px;
+}
+.carousel-caption h1{
+  font-family: var(--Anton);
+}
+.carousel-caption span{
+  font-family: var(--Anton);
+}
+.carousel-caption p {
+  font-family: var(--Livvic);
+}
+.carousel-caption a{
+font-family: var(--Josefin);
+}
+
+/*---sayap iman--*/
+#sayapiman {
+  background-color: rgb(136, 255, 136);
+}
+
+#sayapiman .container .row .col-lg-3 .card img {
+  position: relative;
+  z-index: 1;
+  background: white;
+  width: 14.5rem;
+  height: 12rem;
+  margin: 1em;
+  border-radius: 0.5em;
+  box-shadow: 1px 2px 50px 0px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+  background: transparent;
+}
+
+@media screen (max-width: 768px) {
+#sayapiman .container .row .col-lg-3 .card img {
+    width: 94%;
+    height: 100%;
+  }
+}
+/*--social-icons---*/
+.social-icons {
+  width: 50px;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.social-icons a img {
+  display: block;
+  width: 20px;
+  margin: 10px auto 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.social-icons a:hover img {
+  width: 30px;
+  margin: 20px auto 30px;
+}
+
+@media (min-width: 360px) and (max-width: 640px) {
+  #Header {
+    background-image: none;
+  }
+  .comtainer {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .logo {
+    margin-top: 27px;
+    width: 70px;
+  }
+
+@media (max-width: 768px) {
+  .social-icons {
+    width: 50px;
+    display: inline-block;
+    top: 0%;
